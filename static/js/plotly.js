@@ -12,12 +12,12 @@ var trace1 = {
 };
 
 var layout1 = {
-  xaxis: {title:{text: "Countries"}},
+  xaxis: {title:{text: "Countries" },fixedrange:true},
   yaxis: {title:{text:"Percentage"}}
   };
 
 var data1 = [trace1];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("country_bar",data1,layout1,config);
 
 //-----------------------------------------Gender of ds/ml Pie chart----------------------------------------------//
@@ -36,7 +36,7 @@ var layout = {
 }
 
 var data2 = [trace2];
-var config = {responsive:true}
+var config = {responsive:true,scrollZoom: true,displayModeBar: true}
 
 Plotly.newPlot("gender_pie",data2,layout,config);
 
@@ -61,7 +61,7 @@ var layout2 = {
   yaxis: {title:{text:"Percentage"}}
 };
 var data3 = [trace3];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("Age_bar",data3,layout2,config);
 
 //--------------------Highest level of education for data scientist/machine learning specialist Bar chart---------------------------------------------//
@@ -83,14 +83,14 @@ var trace4 = {
 
 var layout3 = {
   title: {text:"Highest level of education"},
-  xaxis: {title:{text:"hover over to see the education type",
-                 font:{color:"lightgrey"}},
+  xaxis: {title:{text:"hover/tap over fig to see the education type",
+                 font:{color:"lightgrey"}},fixedrange:true,
           ticks:'',
           showticklabels:false},
   yaxis: {title:{text:"Percentage %"}}
 };
 var data4 = [trace4];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("formal_edu",data4,layout3,config);
 
 //------------------------------------------------------Major Field of Study BAR CHART----------------------------------------------------------------------------------//
@@ -117,13 +117,13 @@ var trace5 = {
 var layout4 = {
   title: {text:"Major Field of Study"},
   xaxis: {title:{text:"hover over to see the Major type",
-                 font:{color:"lightgrey"}},
+                 font:{color:"lightgrey"}},fixedrange:true,
           ticks:'',
           showticklabels:false},
   yaxis: {title:{text:"Percentage %"}}
 };
 var data5 = [trace5];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("major_edu",data5,layout4,config);
 
 //-------------------------------------------------------------The Industrial Analysis---------------------------------------------//
@@ -149,7 +149,7 @@ var layout5 = {
 };
 
 var data6 = [trace6];
-var config = {responsive:true}
+var config = {responsive:true,scrollZoom: true,displayModeBar: true}
 
 Plotly.newPlot("lang_pie",data6,layout5,config);
 
@@ -178,7 +178,7 @@ var layout6 = {
   yaxis: {title:{text:"Percentage %"}}
 };
 var data7 = [trace7];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("yrs_code",data7,layout6,config);
 
 
@@ -202,7 +202,7 @@ var layout7 = {
 };
 
 var data8 = [trace8];
-var config = {responsive:true}
+var config = {responsive:true,scrollZoom: true,displayModeBar: true}
 
 Plotly.newPlot("job_sat",data8,layout7,config);
 
@@ -231,11 +231,11 @@ var trace9 = {
 
 var layout8 = {
   title: {text:"The salary of ds/ml sp."},
-  xaxis: {title:{text:"Countries"}},
+  xaxis: {title:{text:"Countries"},fixedrange:true},
   yaxis: {title:{text:"Avg Salary per year in $"}}
 };
 var data9 = [trace9];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("salary",data9,layout8,config);
 
 
@@ -270,7 +270,7 @@ var layout9 = {
   yaxis: {title:{text:"Avg Salary per year in $"}}
 };
 var data10 = [trace10];
-var config = {responsive: true};
+var config = {responsive: true,scrollZoom: true,displayModeBar: true};
 Plotly.newPlot("us_salary",data10,layout9,config);
 
 //------------------------------------Hobby as Coding PIE---------------------------------------------//
@@ -292,7 +292,7 @@ var layout10 = {
 };
 
 var data11 = [trace11];
-var config = {responsive:true}
+var config = {responsive:true,scrollZoom: true,displayModeBar: true}
 
 Plotly.newPlot("hobby",data11,layout10,config);
 
