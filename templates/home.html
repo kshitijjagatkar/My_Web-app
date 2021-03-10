@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="col-12">
+  <style>.col-12{overflow-x: auto;}</style>
+  <style media="screen">
+    h1 {
+      text-align: center;
+      margin-top: 75px;
+    }
+
+    h6 {
+      text-align: center;
+      margin-top: 10px;
+      margin-left: auto;
+      color: grey;
+      opacity: 0.5;
+    }
+  </style>
+
+  <h1 id="idchange">Welcome</h1>
+  <h6>If you are on mobile view, You can find projects in menu bar</h6>
+  <div class="text-center">
+    <button type="button" id="change_text" class="btn btn-light center">don't click here</button>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='js/fun.js')}}">
+
+
+</script>
+
+
+{% endblock%}
